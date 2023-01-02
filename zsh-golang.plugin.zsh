@@ -28,8 +28,6 @@ if [[ ! -f "$ZSH_CACHE_DIR/go_versions"  ||  ! $(find "$ZSH_CACHE_DIR/go_version
         | sort --version-sort --unique --reverse --output "$ZSH_CACHE_DIR/go_versions"
 fi
 
-# Completions directory for 'g', 'go' and 'gofmt' commands
-ZSH_GOLANG_DIR="${0:A:h}/completions"
-
 # Add completions to the FPATH
-fpath=("$ZSH_GOLANG_DIR" $fpath)
+typeset -TUx FPATH fpath
+fpath=("${0:A:h}/completions" $fpath)
