@@ -78,7 +78,7 @@ __installedVersions() {
 # Completing list of Remote Versions
 __remoteVersions() {
   declare -a remote_versions_cmd
-  remote_versions_cmd=( $(more "$HOME/.cache/zsh-golang/go_versions") )
+  remote_versions_cmd=( $(cat "$HOME/.cache/zsh-golang/go_versions") )
   _describe 'Remote Versions' remote_versions_cmd  -o nosort
 }
 
