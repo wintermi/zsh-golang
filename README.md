@@ -37,5 +37,11 @@ plug "wintermi/zsh-golang"
 ```
 
 
+## Tab Completions
+Tab completions are provided for `g`, `go` and `gofmt` commands. An example of which can be seen below.
+
+![g-install-tab-completion](https://user-images.githubusercontent.com/33818/210471572-251ff711-d082-4e09-b54e-a74c716d022f.jpg)
+
+
 ## License
 The **zsh-golang** plugin is released under the [Apache License 2.0](https://github.com/wintermi/zsh-golang/blob/main/LICENSE) unless explicitly mentioned in the file header.
