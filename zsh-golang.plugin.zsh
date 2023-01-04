@@ -16,7 +16,7 @@ if ! (( $+commands[g] && $+commands[go] && $+commands[gofmt] )); then
 fi
 
 # Cache directory
-ZSH_CACHE_DIR="$HOME/.cache/zsh-golang"
+local ZSH_CACHE_DIR="$HOME/.cache/zsh-golang"
 [ ! -d "$ZSH_CACHE_DIR" ] && mkdir -p "$ZSH_CACHE_DIR"
 
 # Only regenerate go versions list if older than 24 hours, or does not exist

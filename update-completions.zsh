@@ -2,7 +2,7 @@
 # shellcheck disable=SC1090
 
 # Completions directory for `go` command
-ZSH_GOLANG_DIR="${0:A:h}/completions"
+local ZSH_GOLANG_DIR="${0:A:h}/completions"
 
 # Download the latest versions of the Go completions
 # Maintained by Koichi Shiraishi - https://github.com/zchee/zsh-completions
