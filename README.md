@@ -1,5 +1,5 @@
 # zsh-golang
-A simple zsh plugin for the Go programming language toolchain.
+A zsh plugin for the Go programming language toolchain.
 
 ## Install
 Using the [:zap: Zap](https://www.zapzsh.org/) minimal zsh plugin manager, add the following to your `.zshrc`
@@ -10,7 +10,7 @@ plug "wintermi/zsh-golang"
 ```
 
 ## Prerequisite Checks
-A number of simple checks are performed to verify the following Go programming language tools have been installed:
+A number of checks are performed to verify the following Go programming language tools have been installed:
 
 - [`g`](https://github.com/stefanmaric/g) - A simple go version manager
 - [`go`](https://github.com/golang/go) - The Go programming language
