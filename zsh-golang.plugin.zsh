@@ -1,9 +1,12 @@
 #!/usr/bin/env zsh
 # shellcheck disable=SC1090
 
-# Setup environment location.
+# Setup go environment location
 export GOPATH=${GOPATH:-"$HOME/go"}
 export GOROOT=${GOROOT:-"$HOME/.go"}
+
+# Setup alias for go version manager
+alias ggovm="$GOPATH/bin/g"
 
 # Add the go bin directory to the PATH
 typeset -TUx PATH path
