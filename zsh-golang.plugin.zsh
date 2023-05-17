@@ -14,7 +14,7 @@ path=("$GOPATH/bin" $path)
 
 # Exit if the 'g', 'go' or 'gofmt' command is not found
 if ! (( $+commands[g] && $+commands[go] && $+commands[gofmt] )); then
-    echo "ERROR: 'g', 'go' or 'gofmt' command not found"
+    echo "WARNING: 'g', 'go' or 'gofmt' command not found"
     return
 fi
 
