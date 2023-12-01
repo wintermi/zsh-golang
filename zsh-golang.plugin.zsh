@@ -22,8 +22,8 @@ fi
 local ZSH_CACHE_DIR="$HOME/.cache/zsh-golang"
 [ ! -d "$ZSH_CACHE_DIR" ] && mkdir -p "$ZSH_CACHE_DIR"
 
-# Only regenerate go versions list if older than 24 hours, or does not exist
-if [[ ! -f "$ZSH_CACHE_DIR/go_versions"  ||  ! $(find "$ZSH_CACHE_DIR/go_versions" -newermt "24 hours ago" -print) ]]; then
+# Only regenerate go versions list if older than 7 days, or does not exist
+if [[ ! -f "$ZSH_CACHE_DIR/go_versions"  ||  ! $(find "$ZSH_CACHE_DIR/go_versions" -newermt "7 days ago" -print) ]]; then
     curl -sSL "https://go.googlesource.com/go/+refs" 2> /dev/null \
         | grep -E -o '"/go/\+/refs/tags/go.+?"' \
         | grep -E -o 'go[[:digit:]]+(\.[[:digit:]]+)+\b' \
